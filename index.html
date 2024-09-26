@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="./images/icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeScript Form</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <form id="productForm">
+            <label for="name">Product name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price" required>
+
+            <label for="type">Product type:</label>
+            <input type="text" id="type" name="type" required>
+
+            <label for="unit">Unit of Measurement:</label>
+            <input type="text" id="unit" name="unit" required>
+
+            <label for="date">Date of Arrival:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="supplier">Supplier:</label>
+            <input type="text" id="supplier" name="supplier" required>
+
+            <button type="submit">Add Product</button>
+        </form>
+
+        <input type="text" id="search" placeholder="Search products...">
+        <div id="productList"></div>
+        <div id="totalCost"></div>
+    </div>
+
+    <script src="./build/app.js"></script>
+</body>
+</html>
